@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{B42A5AAA-1376-408D-A245-E64DC222E135}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>PI2021IIIPROYECTO3</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="frmAerolinea.cpp" />
+    <ClCompile Include="frmAvion.cpp" />
+    <ClCompile Include="frmBoletos.cpp" />
+    <ClCompile Include="frmDatosClientes.cpp" />
+    <ClCompile Include="frmDATOSEMPLEADO.cpp" />
+    <ClCompile Include="frmDatosEmpleados.cpp" />
+    <ClCompile Include="frmDescuento.cpp" />
+    <ClCompile Include="frmFactura.cpp" />
+    <ClCompile Include="frmLogin.cpp" />
+    <ClCompile Include="frmLugares.cpp" />
+    <ClCompile Include="frmmenu.cpp" />
+    <ClCompile Include="frmpersonas.cpp" />
+    <ClCompile Include="frmRegistroaerolinea.cpp" />
+    <ClCompile Include="frmRegistroBOLETO.cpp" />
+    <ClCompile Include="frmRegistroDatosclientes.cpp" />
+    <ClCompile Include="frmRegistroDescuento.cpp" />
+    <ClCompile Include="frmRegistroFactura.cpp" />
+    <ClCompile Include="frmRegistroHorario.cpp" />
+    <ClCompile Include="frmRegistroLugares.cpp" />
+    <ClCompile Include="frmRegistroPersonas.cpp" />
+    <ClCompile Include="frmRegistroReserva.cpp" />
+    <ClCompile Include="frmRegistroTIPOCLIENTE.cpp" />
+    <ClCompile Include="frmReserva.cpp" />
+    <ClCompile Include="Horarios.cpp" />
+    <ClCompile Include="PERSONAS.cpp" />
+    <ClCompile Include="tipodeclientes.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="frmAerolinea.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmAvion.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmBoletos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmDatosClientes.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmRegistroBOLETO.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmregistroDATOSEMPLEADO.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmDatosEmpleados.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmDescuento.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmFactura.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmHorarios.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmLogin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmLugares.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmmenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmpersonas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmRegistroaerolinea.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmRegistroDatosclientes.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmRegistroDescuento.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmRegistroFactura.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmRegistroHorario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmRegistroLugares.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmRegistroPersonas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmRegistroReserva.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmRegistroTIPOCLIENTE.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmReserva.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PERSONAS.h" />
+    <ClInclude Include="tipodeclientes.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAerolinea.resx">
+      <DependentUpon>frmAerolinea.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAvion.resx">
+      <DependentUpon>frmAvion.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBoletos.resx">
+      <DependentUpon>frmBoletos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosClientes.resx">
+      <DependentUpon>frmDatosClientes.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroBOLETO.resx">
+      <DependentUpon>frmRegistroBOLETO.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmregistroDATOSEMPLEADO.resx">
+      <DependentUpon>frmregistroDATOSEMPLEADO.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosEmpleados.resx">
+      <DependentUpon>frmDatosEmpleados.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDescuento.resx">
+      <DependentUpon>frmDescuento.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFactura.resx">
+      <DependentUpon>frmFactura.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHorarios.resx">
+      <DependentUpon>frmHorarios.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLugares.resx">
+      <DependentUpon>frmLugares.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmenu.resx">
+      <DependentUpon>frmmenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpersonas.resx">
+      <DependentUpon>frmpersonas.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroaerolinea.resx">
+      <DependentUpon>frmRegistroaerolinea.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroDatosclientes.resx">
+      <DependentUpon>frmRegistroDatosclientes.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroDescuento.resx">
+      <DependentUpon>frmRegistroDescuento.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroFactura.resx">
+      <DependentUpon>frmRegistroFactura.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroHorario.resx">
+      <DependentUpon>frmRegistroHorario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroLugares.resx">
+      <DependentUpon>frmRegistroLugares.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroPersonas.resx">
+      <DependentUpon>frmRegistroPersonas.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroReserva.resx">
+      <DependentUpon>frmRegistroReserva.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroTIPOCLIENTE.resx">
+      <DependentUpon>frmRegistroTIPOCLIENTE.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReserva.resx">
+      <DependentUpon>frmReserva.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tipodeclientes.resx">
+      <DependentUpon>tipodeclientes.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
